@@ -1,2 +1,2 @@
-# resume
-Config files for my GitHub profile.
+# My resume 
+Here you can read my resume file
