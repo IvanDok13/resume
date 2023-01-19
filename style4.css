@@ -1,71 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* cursor: url(cursor.png), url(cursor2.png), default; */
+
 body {
-    margin: 0;
-  
-    /* BEGIN (write your solution here) */
-  
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #333;
-    
-    /* END */
-    font-family: sans-serif;
+    font-weight: normal;
+    color: #0f141e;
     line-height: 1.5;
-  }
-  
-  /* BEGIN (write your solution here) */
-  
-  h1 {
-    margin-top: 50px;
+    background: #f1f1f1;
+}
+
+h1 {
+    margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
-  }
-  
-  /* END */
-  
-  h2 {
-    /* BEGIN (write your solution here) */
-  
+}
+
+h2 {
     margin-top: 0;
     padding-bottom: 30px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-  
-    /* END */
-  
     border-bottom: 2px solid #e3e3e3;
-  }
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:hover {
+    color: green;
+    font-size: 2rem;
+}
+
+a:visited {
+    color: blue;
+}
+
+.btn {
+    background: purple;
+    font-size: 20px;
+    color: white;
+    border-radius: 30px;
+    font-family: inherit;
+       
+}
+
+.btn:hover {
+   background: yellow;
+   size: 20px;
+   color: rgb(0, 0, 0); 
+}
+
+.btn:visited {
+    background: turquoise;
+}
   
-  main {
-    width: 900px;
-    margin: auto;
-  }
-  
-  /* BEGIN (write your solution here) */
-  section {
+section {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 0;
     margin-right: 0;
-  
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 0;
     padding-bottom: 0;
-  }
+}
   
-  section h2 {
+section h2 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-  
     text-align: left;
-    border: none;
-  }
+}
   
-  li {
+.list li {
     margin-bottom: 10px;
-  }
+}
+
+.link-list {
+    padding: 0;
+}
+
+.link-list li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.table {
+   
+    color: rgb(240, 231, 231);
+    text-align: center;
+}
+
+.table td {
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0);;
+    
+}
+
+@media (max-width: 600px) {
+    .table {
+        display: flex;
+    }
+}
+.container {
+    max-width: auto;
+    margin: auto;
+    padding-top: 30px;
+    padding: 30px 20px 20px 50px;
+}
+
+.avatar {
+    /* width: 200px; */
+    border-radius: 30px;
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
   
-  /* END */
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    font-size: initial;
+    font-weight: bold;
+    color: #2e2d2d;
+}
   
+.info-text h3 {
+     margin-bottom: 10px;
+}
+
+@media (max-width: 670px) {
+    .info {
+        display: block;
+        text-align: left;
+
+
+    }
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.skills {
+    background: rgb(21, 177, 47);
+}
+
+.education {
+    background: rgb(191, 161, 29);
+}
+
+.workexp {
+    background: rgb(175, 47, 12);
+}
+
+.facts {
+    background: grey;
+}
+
+.form {
+    text-align: center;
+}
+
+.form-row {
+margin-bottom: 10px;
+display: flex;
+}
+
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+    /* display: inline-block; */
+    /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 670px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group textarea { 
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
